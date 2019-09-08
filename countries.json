@@ -1,0 +1,1460 @@
+[
+  {
+    "country": "Afghanistan",
+    "city": "Kabul",
+    "independence": "1919",
+    "location": "Southern and Central Asia"
+  },
+  {
+    "country": "Albania",
+    "city": "Tirana",
+    "independence": "1912",
+    "location": "Southern Europe"
+  },
+  {
+    "country": "Algeria",
+    "city": "Alger",
+    "independence": "1962",
+    "location": "Northern Africa"
+  },
+  {
+    "country": "American Samoa",
+    "city": "Fagatogo",
+    "independence": null,
+    "location": "Polynesia"
+  },
+  {
+    "country": "Andorra",
+    "city": "Andorra la Vella",
+    "independence": "1278",
+    "location": "Southern Europe"
+  },
+  {
+    "country": "Angola",
+    "city": "Luanda",
+    "independence": "1975",
+    "location": "Central Africa"
+  },
+  {
+    "country": "Anguilla",
+    "city": "The Valley",
+    "independence": null,
+    "location": "Caribbean"
+  },
+  {
+    "country": "Antarctica",
+    "city": null,
+    "independence": null,
+    "location": "Antarctica"
+  },
+  {
+    "country": "Antigua and Barbuda",
+    "city": "Saint John's",
+    "independence": "1981",
+    "location": "Caribbean"
+  },
+  {
+    "country": "Argentina",
+    "city": "Buenos Aires",
+    "independence": "1816",
+    "location": "South America"
+  },
+  {
+    "country": "Armenia",
+    "city": "Yerevan",
+    "independence": "1991",
+    "location": "Middle East"
+  },
+  {
+    "country": "Aruba",
+    "city": "Oranjestad",
+    "independence": null,
+    "location": "Caribbean"
+  },
+  {
+    "country": "Australia",
+    "city": "Canberra",
+    "independence": "1901",
+    "location": "Australia and New Zealand"
+  },
+  {
+    "country": "Austria",
+    "city": "Wien",
+    "independence": "1918",
+    "location": "Western Europe"
+  },
+  {
+    "country": "Azerbaijan",
+    "city": "Baku",
+    "independence": "1991",
+    "location": "Middle East"
+  },
+  {
+    "country": "Bahamas",
+    "city": "Nassau",
+    "independence": "1973",
+    "location": "Caribbean"
+  },
+  {
+    "country": "Bahrain",
+    "city": "al-Manama",
+    "independence": "1971",
+    "location": "Middle East"
+  },
+  {
+    "country": "Bangladesh",
+    "city": "Dhaka",
+    "independence": "1971",
+    "location": "Southern and Central Asia"
+  },
+  {
+    "country": "Barbados",
+    "city": "Bridgetown",
+    "independence": "1966",
+    "location": "Caribbean"
+  },
+  {
+    "country": "Belarus",
+    "city": "Minsk",
+    "independence": "1991",
+    "location": "Eastern Europe"
+  },
+  {
+    "country": "Belgium",
+    "city": "Bruxelles [Brussel]",
+    "independence": "1830",
+    "location": "Western Europe"
+  },
+  {
+    "country": "Belize",
+    "city": "Belmopan",
+    "independence": "1981",
+    "location": "Central America"
+  },
+  {
+    "country": "Benin",
+    "city": "Porto-Novo",
+    "independence": "1960",
+    "location": "Western Africa"
+  },
+  {
+    "country": "Bermuda",
+    "city": "Hamilton",
+    "independence": null,
+    "location": "North America"
+  },
+  {
+    "country": "Bhutan",
+    "city": "Thimphu",
+    "independence": "1910",
+    "location": "Southern and Central Asia"
+  },
+  {
+    "country": "Bolivia",
+    "city": "La Paz",
+    "independence": "1825",
+    "location": "South America"
+  },
+  {
+    "country": "Bosnia and Herzegovina",
+    "city": "Sarajevo",
+    "independence": "1992",
+    "location": "Southern Europe"
+  },
+  {
+    "country": "Botswana",
+    "city": "Gaborone",
+    "independence": "1966",
+    "location": "Southern Africa"
+  },
+  {
+    "country": "Bouvet Island",
+    "city": null,
+    "independence": null,
+    "location": "Antarctica"
+  },
+  {
+    "country": "Brazil",
+    "city": "Brasília",
+    "independence": "1822",
+    "location": "South America"
+  },
+  {
+    "country": "British Indian Ocean Territory",
+    "city": null,
+    "independence": null,
+    "location": "Eastern Africa"
+  },
+  {
+    "country": "Brunei",
+    "city": "Bandar Seri Begawan",
+    "independence": "1984",
+    "location": "Southeast Asia"
+  },
+  {
+    "country": "Bulgaria",
+    "city": "Sofia",
+    "independence": "1908",
+    "location": "Eastern Europe"
+  },
+  {
+    "country": "Burkina Faso",
+    "city": "Ouagadougou",
+    "independence": "1960",
+    "location": "Western Africa"
+  },
+  {
+    "country": "Burundi",
+    "city": "Bujumbura",
+    "independence": "1962",
+    "location": "Eastern Africa"
+  },
+  {
+    "country": "Cambodia",
+    "city": "Phnom Penh",
+    "independence": "1953",
+    "location": "Southeast Asia"
+  },
+  {
+    "country": "Cameroon",
+    "city": "Yaound",
+    "independence": "1960",
+    "location": "Central Africa"
+  },
+  {
+    "country": "Canada",
+    "city": "Ottawa",
+    "independence": "1867",
+    "location": "North America"
+  },
+  {
+    "country": "Cape Verde",
+    "city": "Praia",
+    "independence": "1975",
+    "location": "Western Africa"
+  },
+  {
+    "country": "Cayman Islands",
+    "city": "George Town",
+    "independence": null,
+    "location": "Caribbean"
+  },
+  {
+    "country": "Central African Republic",
+    "city": "Bangui",
+    "independence": "1960",
+    "location": "Central Africa"
+  },
+  {
+    "country": "Chad",
+    "city": "N'Djam",
+    "independence": "1960",
+    "location": "Central Africa"
+  },
+  {
+    "country": "Chile",
+    "city": "Santiago de Chile",
+    "independence": "1810",
+    "location": "South America"
+  },
+  {
+    "country": "China",
+    "city": "Peking",
+    "independence": "-1523",
+    "location": "Eastern Asia"
+  },
+  {
+    "country": "Christmas Island",
+    "city": "Flying Fish Cove",
+    "independence": null,
+    "location": "Australia and New Zealand"
+  },
+  {
+    "country": "Cocos (Keeling) Islands",
+    "city": "West Island",
+    "independence": null,
+    "location": "Australia and New Zealand"
+  },
+  {
+    "country": "Colombia",
+    "city": "Santaf",
+    "independence": "1810",
+    "location": "South America"
+  },
+  {
+    "country": "Comoros",
+    "city": "Moroni",
+    "independence": "1975",
+    "location": "Eastern Africa"
+  },
+  {
+    "country": "Congo",
+    "city": "Brazzaville",
+    "independence": "1960",
+    "location": "Central Africa"
+  },
+  {
+    "country": "Cook Islands",
+    "city": "Avarua",
+    "independence": null,
+    "location": "Polynesia"
+  },
+  {
+    "country": "Costa Rica",
+    "city": "San Jos",
+    "independence": "1821",
+    "location": "Central America"
+  },
+  {
+    "country": "Croatia",
+    "city": "Zagreb",
+    "independence": "1991",
+    "location": "Southern Europe"
+  },
+  {
+    "country": "Cuba",
+    "city": "La Habana",
+    "independence": "1902",
+    "location": "Caribbean"
+  },
+  {
+    "country": "Cyprus",
+    "city": "Nicosia",
+    "independence": "1960",
+    "location": "Middle East"
+  },
+  {
+    "country": "Czech Republic",
+    "city": "Praha",
+    "independence": "1993",
+    "location": "Eastern Europe"
+  },
+  {
+    "country": "Denmark",
+    "city": "Copenhagen",
+    "independence": "800",
+    "location": "Nordic Countries"
+  },
+  {
+    "country": "Djibouti",
+    "city": "Djibouti",
+    "independence": "1977",
+    "location": "Eastern Africa"
+  },
+  {
+    "country": "Dominica",
+    "city": "Roseau",
+    "independence": "1978",
+    "location": "Caribbean"
+  },
+  {
+    "country": "Dominican Republic",
+    "city": "Santo Domingo de Guzm",
+    "independence": "1844",
+    "location": "Caribbean"
+  },
+  {
+    "country": "East Timor",
+    "city": "Dili",
+    "independence": null,
+    "location": "Southeast Asia"
+  },
+  {
+    "country": "Ecuador",
+    "city": "Quito",
+    "independence": "1822",
+    "location": "South America"
+  },
+  {
+    "country": "Egypt",
+    "city": "Cairo",
+    "independence": "1922",
+    "location": "Northern Africa"
+  },
+  {
+    "country": "El Salvador",
+    "city": "San Salvador",
+    "independence": "1841",
+    "location": "Central America"
+  },
+  {
+    "country": "England",
+    "city": "London",
+    "independence": null,
+    "location": null
+  },
+  {
+    "country": "Equatorial Guinea",
+    "city": "Malabo",
+    "independence": "1968",
+    "location": "Central Africa"
+  },
+  {
+    "country": "Eritrea",
+    "city": "Asmara",
+    "independence": "1993",
+    "location": "Eastern Africa"
+  },
+  {
+    "country": "Estonia",
+    "city": "Tallinn",
+    "independence": "1991",
+    "location": "Baltic Countries"
+  },
+  {
+    "country": "Ethiopia",
+    "city": "Addis Abeba",
+    "independence": "-1000",
+    "location": "Eastern Africa"
+  },
+  {
+    "country": "Falkland Islands",
+    "city": "Stanley",
+    "independence": null,
+    "location": "South America"
+  },
+  {
+    "country": "Faroe Islands",
+    "city": "Tórshavn",
+    "independence": null,
+    "location": "Nordic Countries"
+  },
+  {
+    "country": "Fiji Islands",
+    "city": "Suva",
+    "independence": "1970",
+    "location": "Melanesia"
+  },
+  {
+    "country": "Finland",
+    "city": "Helsinki [Helsingfors]",
+    "independence": "1917",
+    "location": "Nordic Countries"
+  },
+  {
+    "country": "France",
+    "city": "Paris",
+    "independence": "843",
+    "location": "Western Europe"
+  },
+  {
+    "country": "French Guiana",
+    "city": "Cayenne",
+    "independence": null,
+    "location": "South America"
+  },
+  {
+    "country": "French Polynesia",
+    "city": "Papeete",
+    "independence": null,
+    "location": "Polynesia"
+  },
+  {
+    "country": "French Southern territories",
+    "city": null,
+    "independence": null,
+    "location": "Antarctica"
+  },
+  {
+    "country": "Gabon",
+    "city": "Libreville",
+    "independence": "1960",
+    "location": "Central Africa"
+  },
+  {
+    "country": "Gambia",
+    "city": "Banjul",
+    "independence": "1965",
+    "location": "Western Africa"
+  },
+  {
+    "country": "Georgia",
+    "city": "Tbilisi",
+    "independence": "1991",
+    "location": "Middle East"
+  },
+  {
+    "country": "Germany",
+    "city": "Berlin",
+    "independence": "1955",
+    "location": "Western Europe"
+  },
+  {
+    "country": "Ghana",
+    "city": "Accra",
+    "independence": "1957",
+    "location": "Western Africa"
+  },
+  {
+    "country": "Gibraltar",
+    "city": "Gibraltar",
+    "independence": null,
+    "location": "Southern Europe"
+  },
+  {
+    "country": "Greece",
+    "city": "Athenai",
+    "independence": "1830",
+    "location": "Southern Europe"
+  },
+  {
+    "country": "Greenland",
+    "city": "Nuuk",
+    "independence": null,
+    "location": "North America"
+  },
+  {
+    "country": "Grenada",
+    "city": "Saint George's",
+    "independence": "1974",
+    "location": "Caribbean"
+  },
+  {
+    "country": "Guadeloupe",
+    "city": "Basse-Terre",
+    "independence": null,
+    "location": "Caribbean"
+  },
+  {
+    "country": "Guam",
+    "city": "Aga",
+    "independence": null,
+    "location": "Micronesia"
+  },
+  {
+    "country": "Guatemala",
+    "city": "Ciudad de Guatemala",
+    "independence": "1821",
+    "location": "Central America"
+  },
+  {
+    "country": "Guinea",
+    "city": "Conakry",
+    "independence": "1958",
+    "location": "Western Africa"
+  },
+  {
+    "country": "Guinea-Bissau",
+    "city": "Bissau",
+    "independence": "1974",
+    "location": "Western Africa"
+  },
+  {
+    "country": "Guyana",
+    "city": "Georgetown",
+    "independence": "1966",
+    "location": "South America"
+  },
+  {
+    "country": "Haiti",
+    "city": "Port-au-Prince",
+    "independence": "1804",
+    "location": "Caribbean"
+  },
+  {
+    "country": "Heard Island and McDonald Islands",
+    "city": null,
+    "independence": null,
+    "location": "Antarctica"
+  },
+  {
+    "country": "Holy See (Vatican City State)",
+    "city": "Citt",
+    "independence": "1929",
+    "location": "Southern Europe"
+  },
+  {
+    "country": "Honduras",
+    "city": "Tegucigalpa",
+    "independence": "1838",
+    "location": "Central America"
+  },
+  {
+    "country": "Hong Kong",
+    "city": "Victoria",
+    "independence": null,
+    "location": "Eastern Asia"
+  },
+  {
+    "country": "Hungary",
+    "city": "Budapest",
+    "independence": "1918",
+    "location": "Eastern Europe"
+  },
+  {
+    "country": "Iceland",
+    "city": "Reykjav",
+    "independence": "1944",
+    "location": "Nordic Countries"
+  },
+  {
+    "country": "India",
+    "city": "New Delhi",
+    "independence": "1947",
+    "location": "Southern and Central Asia"
+  },
+  {
+    "country": "Indonesia",
+    "city": "Jakarta",
+    "independence": "1945",
+    "location": "Southeast Asia"
+  },
+  {
+    "country": "Iran",
+    "city": "Tehran",
+    "independence": "1906",
+    "location": "Southern and Central Asia"
+  },
+  {
+    "country": "Iraq",
+    "city": "Baghdad",
+    "independence": "1932",
+    "location": "Middle East"
+  },
+  {
+    "country": "Ireland",
+    "city": "Dublin",
+    "independence": "1921",
+    "location": "British Isles"
+  },
+  {
+    "country": "Israel",
+    "city": "Jerusalem",
+    "independence": "1948",
+    "location": "Middle East"
+  },
+  {
+    "country": "Italy",
+    "city": "Roma",
+    "independence": "1861",
+    "location": "Southern Europe"
+  },
+  {
+    "country": "Ivory Coast",
+    "city": "Yamoussoukro",
+    "independence": "1960",
+    "location": "Western Africa"
+  },
+  {
+    "country": "Jamaica",
+    "city": "Kingston",
+    "independence": "1962",
+    "location": "Caribbean"
+  },
+  {
+    "country": "Japan",
+    "city": "Tokyo",
+    "independence": "-660",
+    "location": "Eastern Asia"
+  },
+  {
+    "country": "Jordan",
+    "city": "Amman",
+    "independence": "1946",
+    "location": "Middle East"
+  },
+  {
+    "country": "Kazakhstan",
+    "city": "Astana",
+    "independence": "1991",
+    "location": "Southern and Central Asia"
+  },
+  {
+    "country": "Kenya",
+    "city": "Nairobi",
+    "independence": "1963",
+    "location": "Eastern Africa"
+  },
+  {
+    "country": "Kiribati",
+    "city": "Bairiki",
+    "independence": "1979",
+    "location": "Micronesia"
+  },
+  {
+    "country": "Kuwait",
+    "city": "Kuwait",
+    "independence": "1961",
+    "location": "Middle East"
+  },
+  {
+    "country": "Kyrgyzstan",
+    "city": "Bishkek",
+    "independence": "1991",
+    "location": "Southern and Central Asia"
+  },
+  {
+    "country": "Laos",
+    "city": "Vientiane",
+    "independence": "1953",
+    "location": "Southeast Asia"
+  },
+  {
+    "country": "Latvia",
+    "city": "Riga",
+    "independence": "1991",
+    "location": "Baltic Countries"
+  },
+  {
+    "country": "Lebanon",
+    "city": "Beirut",
+    "independence": "1941",
+    "location": "Middle East"
+  },
+  {
+    "country": "Lesotho",
+    "city": "Maseru",
+    "independence": "1966",
+    "location": "Southern Africa"
+  },
+  {
+    "country": "Liberia",
+    "city": "Monrovia",
+    "independence": "1847",
+    "location": "Western Africa"
+  },
+  {
+    "country": "Libyan Arab Jamahiriya",
+    "city": "Tripoli",
+    "independence": "1951",
+    "location": "Northern Africa"
+  },
+  {
+    "country": "Liechtenstein",
+    "city": "Vaduz",
+    "independence": "1806",
+    "location": "Western Europe"
+  },
+  {
+    "country": "Lithuania",
+    "city": "Vilnius",
+    "independence": "1991",
+    "location": "Baltic Countries"
+  },
+  {
+    "country": "Luxembourg",
+    "city": "Luxembourg [Luxemburg/L",
+    "independence": "1867",
+    "location": "Western Europe"
+  },
+  {
+    "country": "Macao",
+    "city": "Macao",
+    "independence": null,
+    "location": "Eastern Asia"
+  },
+  {
+    "country": "North Macedonia",
+    "city": "Skopje",
+    "independence": "1991",
+    "location": "Southern Europe"
+  },
+  {
+    "country": "Madagascar",
+    "city": "Antananarivo",
+    "independence": "1960",
+    "location": "Eastern Africa"
+  },
+  {
+    "country": "Malawi",
+    "city": "Lilongwe",
+    "independence": "1964",
+    "location": "Eastern Africa"
+  },
+  {
+    "country": "Malaysia",
+    "city": "Kuala Lumpur",
+    "independence": "1957",
+    "location": "Southeast Asia"
+  },
+  {
+    "country": "Maldives",
+    "city": "Male",
+    "independence": "1965",
+    "location": "Southern and Central Asia"
+  },
+  {
+    "country": "Mali",
+    "city": "Bamako",
+    "independence": "1960",
+    "location": "Western Africa"
+  },
+  {
+    "country": "Malta",
+    "city": "Valletta",
+    "independence": "1964",
+    "location": "Southern Europe"
+  },
+  {
+    "country": "Marshall Islands",
+    "city": "Dalap-Uliga-Darrit",
+    "independence": "1990",
+    "location": "Micronesia"
+  },
+  {
+    "country": "Martinique",
+    "city": "Fort-de-France",
+    "independence": null,
+    "location": "Caribbean"
+  },
+  {
+    "country": "Mauritania",
+    "city": "Nouakchott",
+    "independence": "1960",
+    "location": "Western Africa"
+  },
+  {
+    "country": "Mauritius",
+    "city": "Port-Louis",
+    "independence": "1968",
+    "location": "Eastern Africa"
+  },
+  {
+    "country": "Mayotte",
+    "city": "Mamoutzou",
+    "independence": null,
+    "location": "Eastern Africa"
+  },
+  {
+    "country": "Mexico",
+    "city": "Ciudad de M",
+    "independence": "1810",
+    "location": "Central America"
+  },
+  {
+    "country": "Micronesia, Federated States of",
+    "city": "Palikir",
+    "independence": "1990",
+    "location": "Micronesia"
+  },
+  {
+    "country": "Moldova",
+    "city": "Chisinau",
+    "independence": "1991",
+    "location": "Eastern Europe"
+  },
+  {
+    "country": "Monaco",
+    "city": "Monaco-Ville",
+    "independence": "1861",
+    "location": "Western Europe"
+  },
+  {
+    "country": "Mongolia",
+    "city": "Ulan Bator",
+    "independence": "1921",
+    "location": "Eastern Asia"
+  },
+  {
+    "country": "Montserrat",
+    "city": "Plymouth",
+    "independence": null,
+    "location": "Caribbean"
+  },
+  {
+    "country": "Morocco",
+    "city": "Rabat",
+    "independence": "1956",
+    "location": "Northern Africa"
+  },
+  {
+    "country": "Mozambique",
+    "city": "Maputo",
+    "independence": "1975",
+    "location": "Eastern Africa"
+  },
+  {
+    "country": "Myanmar",
+    "city": "Rangoon (Yangon)",
+    "independence": "1948",
+    "location": "Southeast Asia"
+  },
+  {
+    "country": "Namibia",
+    "city": "Windhoek",
+    "independence": "1990",
+    "location": "Southern Africa"
+  },
+  {
+    "country": "Nauru",
+    "city": "Yaren",
+    "independence": "1968",
+    "location": "Micronesia"
+  },
+  {
+    "country": "Nepal",
+    "city": "Kathmandu",
+    "independence": "1769",
+    "location": "Southern and Central Asia"
+  },
+  {
+    "country": "Netherlands",
+    "city": "Amsterdam",
+    "independence": "1581",
+    "location": "Western Europe"
+  },
+  {
+    "country": "Netherlands Antilles",
+    "city": "Willemstad",
+    "independence": null,
+    "location": "Caribbean"
+  },
+  {
+    "country": "New Caledonia",
+    "city": "Noum",
+    "independence": null,
+    "location": "Melanesia"
+  },
+  {
+    "country": "New Zealand",
+    "city": "Wellington",
+    "independence": "1907",
+    "location": "Australia and New Zealand"
+  },
+  {
+    "country": "Nicaragua",
+    "city": "Managua",
+    "independence": "1838",
+    "location": "Central America"
+  },
+  {
+    "country": "Niger",
+    "city": "Niamey",
+    "independence": "1960",
+    "location": "Western Africa"
+  },
+  {
+    "country": "Nigeria",
+    "city": "Abuja",
+    "independence": "1960",
+    "location": "Western Africa"
+  },
+  {
+    "country": "Niue",
+    "city": "Alofi",
+    "independence": null,
+    "location": "Polynesia"
+  },
+  {
+    "country": "Norfolk Island",
+    "city": "Kingston",
+    "independence": null,
+    "location": "Australia and New Zealand"
+  },
+  {
+    "country": "North Korea",
+    "city": "Pyongyang",
+    "independence": "1948",
+    "location": "Eastern Asia"
+  },
+  {
+    "country": "Northern Ireland",
+    "city": "Belfast",
+    "independence": null,
+    "location": null
+  },
+  {
+    "country": "Northern Mariana Islands",
+    "city": "Garapan",
+    "independence": null,
+    "location": "Micronesia"
+  },
+  {
+    "country": "Norway",
+    "city": "Oslo",
+    "independence": "1905",
+    "location": "Nordic Countries"
+  },
+  {
+    "country": "Oman",
+    "city": "Masqat",
+    "independence": "1951",
+    "location": "Middle East"
+  },
+  {
+    "country": "Pakistan",
+    "city": "Islamabad",
+    "independence": "1947",
+    "location": "Southern and Central Asia"
+  },
+  {
+    "country": "Palau",
+    "city": "Koror",
+    "independence": "1994",
+    "location": "Micronesia"
+  },
+  {
+    "country": "Palestine",
+    "city": "Gaza",
+    "independence": null,
+    "location": "Middle East"
+  },
+  {
+    "country": "Panama",
+    "city": "Ciudad de Panam",
+    "independence": "1903",
+    "location": "Central America"
+  },
+  {
+    "country": "Papua New Guinea",
+    "city": "Port Moresby",
+    "independence": "1975",
+    "location": "Melanesia"
+  },
+  {
+    "country": "Paraguay",
+    "city": "Asunci",
+    "independence": "1811",
+    "location": "South America"
+  },
+  {
+    "country": "Peru",
+    "city": "Lima",
+    "independence": "1821",
+    "location": "South America"
+  },
+  {
+    "country": "Philippines",
+    "city": "Manila",
+    "independence": "1946",
+    "location": "Southeast Asia"
+  },
+  {
+    "country": "Pitcairn",
+    "city": "Adamstown",
+    "independence": null,
+    "location": "Polynesia"
+  },
+  {
+    "country": "Poland",
+    "city": "Warszawa",
+    "independence": "1918",
+    "location": "Eastern Europe"
+  },
+  {
+    "country": "Portugal",
+    "city": "Lisboa",
+    "independence": "1143",
+    "location": "Southern Europe"
+  },
+  {
+    "country": "Puerto Rico",
+    "city": "San Juan",
+    "independence": null,
+    "location": "Caribbean"
+  },
+  {
+    "country": "Qatar",
+    "city": "Doha",
+    "independence": "1971",
+    "location": "Middle East"
+  },
+  {
+    "country": "Reunion",
+    "city": "Saint-Denis",
+    "independence": null,
+    "location": "Eastern Africa"
+  },
+  {
+    "country": "Romania",
+    "city": "Bucuresti",
+    "independence": "1878",
+    "location": "Eastern Europe"
+  },
+  {
+    "country": "Russian Federation",
+    "city": "Moscow",
+    "independence": "1991",
+    "location": "Eastern Europe"
+  },
+  {
+    "country": "Rwanda",
+    "city": "Kigali",
+    "independence": "1962",
+    "location": "Eastern Africa"
+  },
+  {
+    "country": "Saint Helena",
+    "city": "Jamestown",
+    "independence": null,
+    "location": "Western Africa"
+  },
+  {
+    "country": "Saint Kitts and Nevis",
+    "city": "Basseterre",
+    "independence": "1983",
+    "location": "Caribbean"
+  },
+  {
+    "country": "Saint Lucia",
+    "city": "Castries",
+    "independence": "1979",
+    "location": "Caribbean"
+  },
+  {
+    "country": "Saint Pierre and Miquelon",
+    "city": "Saint-Pierre",
+    "independence": null,
+    "location": "North America"
+  },
+  {
+    "country": "Saint Vincent and the Grenadines",
+    "city": "Kingstown",
+    "independence": "1979",
+    "location": "Caribbean"
+  },
+  {
+    "country": "Samoa",
+    "city": "Apia",
+    "independence": "1962",
+    "location": "Polynesia"
+  },
+  {
+    "country": "San Marino",
+    "city": "San Marino",
+    "independence": "885",
+    "location": "Southern Europe"
+  },
+  {
+    "country": "Sao Tome and Principe",
+    "city": "S",
+    "independence": "1975",
+    "location": "Central Africa"
+  },
+  {
+    "country": "Saudi Arabia",
+    "city": "Riyadh",
+    "independence": "1932",
+    "location": "Middle East"
+  },
+  {
+    "country": "Scotland",
+    "city": "Edinburgh",
+    "independence": null,
+    "location": null
+  },
+  {
+    "country": "Senegal",
+    "city": "Dakar",
+    "independence": "1960",
+    "location": "Western Africa"
+  },
+  {
+    "country": "Seychelles",
+    "city": "Victoria",
+    "independence": "1976",
+    "location": "Eastern Africa"
+  },
+  {
+    "country": "Sierra Leone",
+    "city": "Freetown",
+    "independence": "1961",
+    "location": "Western Africa"
+  },
+  {
+    "country": "Singapore",
+    "city": "Singapore",
+    "independence": "1965",
+    "location": "Southeast Asia"
+  },
+  {
+    "country": "Slovakia",
+    "city": "Bratislava",
+    "independence": "1993",
+    "location": "Eastern Europe"
+  },
+  {
+    "country": "Slovenia",
+    "city": "Ljubljana",
+    "independence": "1991",
+    "location": "Southern Europe"
+  },
+  {
+    "country": "Solomon Islands",
+    "city": "Honiara",
+    "independence": "1978",
+    "location": "Melanesia"
+  },
+  {
+    "country": "Somalia",
+    "city": "Mogadishu",
+    "independence": "1960",
+    "location": "Eastern Africa"
+  },
+  {
+    "country": "South Africa",
+    "city": "Pretoria",
+    "independence": "1910",
+    "location": "Southern Africa"
+  },
+  {
+    "country": "South Georgia and the South Sandwich Islands",
+    "city": null,
+    "independence": null,
+    "location": "Antarctica"
+  },
+  {
+    "country": "South Korea",
+    "city": "Seoul",
+    "independence": "1948",
+    "location": "Eastern Asia"
+  },
+  {
+    "country": "South Sudan",
+    "city": "Juba",
+    "independence": "2011",
+    "location": "Eastern Africa"
+  },
+  {
+    "country": "Spain",
+    "city": "Madrid",
+    "independence": "1492",
+    "location": "Southern Europe"
+  },
+  {
+    "country": "SriLanka",
+    "city": null,
+    "independence": null,
+    "location": null
+  },
+  {
+    "country": "Sudan",
+    "city": "Khartum",
+    "independence": "1956",
+    "location": "Northern Africa"
+  },
+  {
+    "country": "Suriname",
+    "city": "Paramaribo",
+    "independence": "1975",
+    "location": "South America"
+  },
+  {
+    "country": "Svalbard and Jan Mayen",
+    "city": "Longyearbyen",
+    "independence": null,
+    "location": "Nordic Countries"
+  },
+  {
+    "country": "Swaziland",
+    "city": "Mbabane",
+    "independence": "1968",
+    "location": "Southern Africa"
+  },
+  {
+    "country": "Sweden",
+    "city": "Stockholm",
+    "independence": "836",
+    "location": "Nordic Countries"
+  },
+  {
+    "country": "Switzerland",
+    "city": "Bern",
+    "independence": "1499",
+    "location": "Western Europe"
+  },
+  {
+    "country": "Syria",
+    "city": "Damascus",
+    "independence": "1941",
+    "location": "Middle East"
+  },
+  {
+    "country": "Tajikistan",
+    "city": "Dushanbe",
+    "independence": "1991",
+    "location": "Southern and Central Asia"
+  },
+  {
+    "country": "Tanzania",
+    "city": "Dodoma",
+    "independence": "1961",
+    "location": "Eastern Africa"
+  },
+  {
+    "country": "Thailand",
+    "city": "Bangkok",
+    "independence": "1350",
+    "location": "Southeast Asia"
+  },
+  {
+    "country": "The Democratic Republic of Congo",
+    "city": null,
+    "independence": null,
+    "location": null
+  },
+  {
+    "country": "Togo",
+    "city": "Lom",
+    "independence": "1960",
+    "location": "Western Africa"
+  },
+  {
+    "country": "Tokelau",
+    "city": "Fakaofo",
+    "independence": null,
+    "location": "Polynesia"
+  },
+  {
+    "country": "Tonga",
+    "city": "Nuku'alofa",
+    "independence": "1970",
+    "location": "Polynesia"
+  },
+  {
+    "country": "Trinidad and Tobago",
+    "city": "Port-of-Spain",
+    "independence": "1962",
+    "location": "Caribbean"
+  },
+  {
+    "country": "Tunisia",
+    "city": "Tunis",
+    "independence": "1956",
+    "location": "Northern Africa"
+  },
+  {
+    "country": "Turkey",
+    "city": "Ankara",
+    "independence": "1923",
+    "location": "Middle East"
+  },
+  {
+    "country": "Turkmenistan",
+    "city": "Ashgabat",
+    "independence": "1991",
+    "location": "Southern and Central Asia"
+  },
+  {
+    "country": "Turks and Caicos Islands",
+    "city": "Cockburn Town",
+    "independence": null,
+    "location": "Caribbean"
+  },
+  {
+    "country": "Tuvalu",
+    "city": "Funafuti",
+    "independence": "1978",
+    "location": "Polynesia"
+  },
+  {
+    "country": "Uganda",
+    "city": "Kampala",
+    "independence": "1962",
+    "location": "Eastern Africa"
+  },
+  {
+    "country": "Ukraine",
+    "city": "Kyiv",
+    "independence": "1991",
+    "location": "Eastern Europe"
+  },
+  {
+    "country": "United Arab Emirates",
+    "city": "Abu Dhabi",
+    "independence": "1971",
+    "location": "Middle East"
+  },
+  {
+    "country": "United Kingdom",
+    "city": "London",
+    "independence": "1066",
+    "location": "British Isles"
+  },
+  {
+    "country": "United States",
+    "city": "Washington",
+    "independence": "1776",
+    "location": "North America"
+  },
+  {
+    "country": "United States Minor Outlying Islands",
+    "city": null,
+    "independence": null,
+    "location": "Micronesia/Caribbean"
+  },
+  {
+    "country": "Uruguay",
+    "city": "Montevideo",
+    "independence": "1828",
+    "location": "South America"
+  },
+  {
+    "country": "Uzbekistan",
+    "city": "Toskent",
+    "independence": "1991",
+    "location": "Southern and Central Asia"
+  },
+  {
+    "country": "Vanuatu",
+    "city": "Port-Vila",
+    "independence": "1980",
+    "location": "Melanesia"
+  },
+  {
+    "country": "Venezuela",
+    "city": "Caracas",
+    "independence": "1811",
+    "location": "South America"
+  },
+  {
+    "country": "Vietnam",
+    "city": "Hanoi",
+    "independence": "1945",
+    "location": "Southeast Asia"
+  },
+  {
+    "country": "Virgin Islands, British",
+    "city": "Road Town",
+    "independence": null,
+    "location": null
+  },
+  {
+    "country": "Virgin Islands, U.S.",
+    "city": "Charlotte Amalie",
+    "independence": null,
+    "location": null
+  },
+  {
+    "country": "Wales",
+    "city": "Cardiff",
+    "independence": null,
+    "location": null
+  },
+  {
+    "country": "Wallis and Futuna",
+    "city": "Mata-Utu",
+    "independence": null,
+    "location": "Polynesia"
+  },
+  {
+    "country": "Western Sahara",
+    "city": "El-Aai",
+    "independence": null,
+    "location": "Northern Africa"
+  },
+  {
+    "country": "Yemen",
+    "city": "Sanaa",
+    "independence": "1918",
+    "location": "Middle East"
+  },
+  {
+    "country": "Yugoslavia",
+    "city": "Beograd",
+    "independence": "1918",
+    "location": "Southern Europe"
+  },
+  {
+    "country": "Zambia",
+    "city": "Lusaka",
+    "independence": "1964",
+    "location": "Eastern Africa"
+  },
+  {
+    "country": "Zimbabwe",
+    "city": "Harare",
+    "independence": "1980",
+    "location": "Eastern Africa"
+  }
+]

@@ -1,0 +1,26 @@
+{
+  "name": "countries-capitals",
+  "version": "1.0.0",
+  "description": "A simple package to get the capital of the countries",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/chgasparoto/countries-capitals.git"
+  },
+  "keywords": [
+    "countries",
+    "capitals"
+  ],
+  "author": "Cleber Gasparoto <chgasparoto@gmail.com> (https://github.com/chgasparoto)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/chgasparoto/countries-capitals/issues"
+  },
+  "homepage": "https://github.com/chgasparoto/countries-capitals#readme",
+  "dependencies": {
+    "random-item": "3.0.0"
+  }
+}
