@@ -47,6 +47,10 @@ class Countries {
     return this;
   }
 
+  locations() {
+    return [...new Set(this.original.map(item => item.location).filter(Boolean))].sort();
+  }
+
   byIndependence(year, operator) {
     const validOperators = ['=', '>', '>=', '<', '<='];
     let op = '=';
