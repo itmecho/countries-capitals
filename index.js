@@ -70,10 +70,6 @@ class Countries {
     return this;
   }
 
-  missingIndependence() {
-    return this.original.filter(item => item.independence === null);
-  }
-
   compare(firstValue, operator, secondValue) {
     switch (operator) {
       case '>': return firstValue > secondValue;
