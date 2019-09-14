@@ -6,6 +6,7 @@
   "scripts": {
     "test": "jest",
     "test:watch": "jest --watch",
+    "test:coverage": "jest --coverage",
     "lint": "standard --env jest",
     "lint:fix": "npm run lint -- --fix"
   },
@@ -33,9 +34,21 @@
     "standard": "14.2.0"
   },
   "jest": {
+    "testEnvironment": "node",
     "setupFilesAfterEnv": [
       "jest-extended"
-    ]
+    ],
+    "collectCoverageFrom": [
+      "index.js"
+    ],
+    "coverageThreshold": {
+      "global": {
+        "branches": 100,
+        "functions": 100,
+        "lines": 100,
+        "statements": 100
+      }
+    }
   },
   "husky": {
     "hooks": {

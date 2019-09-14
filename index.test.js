@@ -164,10 +164,14 @@ describe('Countries', () => {
 
     test('should filter the countries list by independece year <= (1000) and return an array of countries', () => {
       const spy = jest.spyOn(countries, 'compare')
-      const elders = countries.byIndependence(1000, '<=').toJson()
 
+      let elders = countries.byIndependence(1000, '<=').toJson()
       elders.forEach(({ independence }) => expect(spy).toHaveBeenCalledWith(independence, '<=', 1000))
       expect(elders.map(({ country }) => country)).toIncludeAllMembers(['China', 'Japan', 'France'])
+
+      elders = countries.byIndependence(500, '<').toJson()
+      elders.forEach(({ independence }) => expect(spy).toHaveBeenCalledWith(independence, '<=', 1000))
+      expect(elders.map(({ country }) => country)).toIncludeAllMembers(['China', 'Japan', 'Ethiopia'])
 
       spy.mockRestore()
     })
