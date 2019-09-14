@@ -1,138 +1,138 @@
-'use strict';
+'use strict'
 
-const countriesArray = require('./countries');
-const randomItem = require('random-item');
+const countriesArray = require('./countries')
+const randomItem = require('random-item')
 
 class Countries {
-  constructor(countries = countriesArray) {
-    this.countries = countries;
-    this.original = countries;
+  constructor (countries = countriesArray) {
+    this.countries = countries
+    this.original = countries
   }
 
-  list() {
-    return this.original;
+  list () {
+    return this.original
   }
 
-  reset() {
-    this.countries = this.original;
-    return this;
+  reset () {
+    this.countries = this.original
+    return this
   }
 
-  isValidInput(input) {
-    return typeof input === 'string' || input === null;
+  isValidInput (input) {
+    return typeof input === 'string' || input === null
   }
 
-  containString(str1, str2) {
-    return str1.toLowerCase().includes(str2.toLowerCase());
+  containString (str1, str2) {
+    return str1.toLowerCase().includes(str2.toLowerCase())
   }
 
-  byName(name) {
+  byName (name) {
     if (typeof name !== 'string') {
-      return this;
+      return this
     }
 
-    this.countries = this.countries.filter(({ country }) => this.containString(country, name));
-    return this;
+    this.countries = this.countries.filter(({ country }) => this.containString(country, name))
+    return this
   }
 
-  byCapital(capital) {
+  byCapital (capital) {
     if (!this.isValidInput(capital)) {
-      return this;
+      return this
     }
 
     this.countries = this.countries.filter(({ city }) => {
       if (capital === null) {
-        return city === null;
+        return city === null
       }
 
       if (city === null) {
-        return false;
+        return false
       }
 
-      return this.containString(city, capital);
-    });
+      return this.containString(city, capital)
+    })
 
-    return this;
+    return this
   }
 
-  byLocation(region) {
+  byLocation (region) {
     if (!this.isValidInput(region)) {
-      return this;
+      return this
     }
 
     this.countries = this.countries.filter(({ location }) => {
       if (region === null) {
-        return location === null;
+        return location === null
       }
 
       if (location === null) {
-        return false;
+        return false
       }
 
-      return this.containString(location, region);
-    });
+      return this.containString(location, region)
+    })
 
-    return this;
+    return this
   }
 
-  locations() {
-    return [...new Set(this.original.map(item => item.location).filter(Boolean))].sort();
+  locations () {
+    return [...new Set(this.original.map(item => item.location).filter(Boolean))].sort()
   }
 
-  byIndependence(year, operator) {
+  byIndependence (year, operator) {
     if (!(typeof year === 'number' || year === null)) {
-      return this;
+      return this
     }
 
-    const validOperators = ['=', '>', '>=', '<', '<='];
-    let op = '=';
+    const validOperators = ['=', '>', '>=', '<', '<=']
+    let op = '='
 
     if (validOperators.includes(operator)) {
-      op = operator;
+      op = operator
     }
 
     this.countries = this.countries.filter(({ independence }) => {
       if (year === null) {
-        return independence === null;
+        return independence === null
       }
 
       if (independence === null) {
-        return false;
+        return false
       }
 
-      return this.compare(independence, op, year);
-    });
+      return this.compare(independence, op, year)
+    })
 
-    return this;
+    return this
   }
 
-  compare(firstValue, operator, secondValue) {
+  compare (firstValue, operator, secondValue) {
     switch (operator) {
-      case '>': return firstValue > secondValue;
-      case '>=': return firstValue >= secondValue;
-      case '<': return firstValue < secondValue;
-      case '<=': return firstValue <= secondValue;
-      default: return firstValue == secondValue;
+      case '>': return firstValue > secondValue
+      case '>=': return firstValue >= secondValue
+      case '<': return firstValue < secondValue
+      case '<=': return firstValue <= secondValue
+      default: return firstValue == secondValue // eslint-disable-line
     }
   }
 
-  toJson() {
-    return this.countries;
+  toJson () {
+    return this.countries
   }
 
-  get capital() {
-    const countriesFound = this.countries.length;
+  get capital () {
+    const countriesFound = this.countries.length
 
     if (!countriesFound) {
-      throw new Error('Country not found');
+      throw new Error('Country not found')
     }
 
     if (countriesFound === 1) {
-      return this.countries[0].city;
+      return this.countries[0].city
     }
 
-    return randomItem(this.countries).city;
+    return randomItem(this.countries).city
   }
 }
 
-module.exports = Countries;
+module.exports = Countries
