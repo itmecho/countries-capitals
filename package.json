@@ -4,7 +4,8 @@
   "description": "A simple package to get the capital of the countries",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jest",
+    "test:watch": "jest --watch"
   },
   "repository": {
     "type": "git",
@@ -22,5 +23,20 @@
   "homepage": "https://github.com/chgasparoto/countries-capitals#readme",
   "dependencies": {
     "random-item": "3.0.0"
+  },
+  "devDependencies": {
+    "husky": "3.0.5",
+    "jest": "24.9.0",
+    "jest-extended": "0.11.2"
+  },
+  "jest": {
+    "setupFilesAfterEnv": [
+      "jest-extended"
+    ]
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "npm test"
+    }
   }
 }

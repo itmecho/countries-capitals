@@ -18,30 +18,58 @@ class Countries {
     return this;
   }
 
+  isValidInput(input) {
+    return typeof input === 'string' || input === null;
+  }
+
+  containString(str1, str2) {
+    return str1.toLowerCase().includes(str2.toLowerCase());
+  }
+
   byName(name) {
-    this.countries = this.countries.filter(item => item.country.toLowerCase().includes(name.toLowerCase()));
+    if (typeof name !== 'string') {
+      return this;
+    }
+
+    this.countries = this.countries.filter(({ country }) => this.containString(country, name));
     return this;
   }
 
-  byCapital(city) {
-    this.countries = this.countries.filter(item => {
-      if (item.city === null) {
+  byCapital(capital) {
+    if (!this.isValidInput(capital)) {
+      return this;
+    }
+
+    this.countries = this.countries.filter(({ city }) => {
+      if (capital === null) {
+        return city === null;
+      }
+
+      if (city === null) {
         return false;
       }
 
-      return item.city.toLowerCase().includes(city.toLowerCase());
+      return this.containString(city, capital);
     });
 
     return this;
   }
 
   byLocation(region) {
-    this.countries = this.countries.filter(item => {
-      if (item.location === null) {
+    if (!this.isValidInput(region)) {
+      return this;
+    }
+
+    this.countries = this.countries.filter(({ location }) => {
+      if (region === null) {
+        return location === null;
+      }
+
+      if (location === null) {
         return false;
       }
 
-      return item.location.toLowerCase().includes(region.toLowerCase());
+      return this.containString(location, region);
     });
 
     return this;
@@ -52,6 +80,10 @@ class Countries {
   }
 
   byIndependence(year, operator) {
+    if (!(typeof year === 'number' || year === null)) {
+      return this;
+    }
+
     const validOperators = ['=', '>', '>=', '<', '<='];
     let op = '=';
 
@@ -59,12 +91,16 @@ class Countries {
       op = operator;
     }
 
-    this.countries = this.countries.filter(item => {
-      if (item.independence === null) {
+    this.countries = this.countries.filter(({ independence }) => {
+      if (year === null) {
+        return independence === null;
+      }
+
+      if (independence === null) {
         return false;
       }
 
-      return this.compare(item.independence, op, year);
+      return this.compare(independence, op, year);
     });
 
     return this;
