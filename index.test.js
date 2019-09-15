@@ -15,6 +15,12 @@ describe('Countries', () => {
     })
   })
 
+  describe(' countries json file', () => {
+    test('should match with the snapshot', () => {
+      expect(countriesArray).toMatchSnapshot()
+    })
+  })
+
   describe('list', () => {
     test('should return an array of objects with countries data', () => {
       expect(countries.list()).toBe(countriesArray)
@@ -202,6 +208,18 @@ describe('Countries', () => {
 
     test('should thrown an error in case the give filter does not return any country', () => {
       expect(() => countries.byName('doesnotexist').capital).toThrow('Country not found')
+    })
+  })
+
+  describe('longest', () => {
+    test('should return the longest capital in the countries list', () => {
+      const spy = jest.spyOn(countries, 'byCapital')
+      const longest = countries.longest()
+
+      expect(spy).toHaveBeenCalledWith(longest.capital)
+      expect(longest.capital).toBeString()
+
+      spy.mockRestore()
     })
   })
 })
