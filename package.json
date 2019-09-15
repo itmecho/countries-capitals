@@ -44,6 +44,8 @@
     "collectCoverageFrom": [
       "index.js"
     ],
+    "coverageDirectory": "./coverage/",
+    "collectCoverage": true,
     "coverageThreshold": {
       "global": {
         "branches": 100,
