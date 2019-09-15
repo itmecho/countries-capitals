@@ -144,7 +144,4 @@ class Countries {
   }
 }
 
-const c = new Countries()
-console.log(c.longest().toJson())
-
 module.exports = Countries
