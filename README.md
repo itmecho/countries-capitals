@@ -118,6 +118,9 @@ countries.byIndependence(500, '<') // lesser than
 countries.byIndependence(2000, '>=') // greater or equal than
 countries.byIndependence(null) // countries without independence year
 
+// get the longest capital name of the list
+countries.longest().capital
+
 // return all filtered data as array of objects
 countries.toJson()
 
