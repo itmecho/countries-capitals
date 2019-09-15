@@ -106,6 +106,15 @@ class Countries {
     return this
   }
 
+  longest () {
+    const capitalsArray = this.original.map(({ city }) => city).filter(Boolean)
+    const capital = capitalsArray.reduce((a, b) => a.length > b.length ? a : b)
+
+    this.reset().byCapital(capital)
+
+    return this
+  }
+
   compare (firstValue, operator, secondValue) {
     switch (operator) {
       case '>': return firstValue > secondValue
@@ -134,5 +143,8 @@ class Countries {
     return randomItem(this.countries).city
   }
 }
+
+const c = new Countries()
+console.log(c.longest().toJson())
 
 module.exports = Countries
