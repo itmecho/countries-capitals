@@ -33,7 +33,100 @@ yarn add countries-capital
 
 ## How to use
 
-#### Examples
+```js
+const Countries = require('countries-capital')
+const countries = new Countries()
+
+// filter by name
+const brazil = countries.byName('brazil')
+
+/**
+ * Get all country data:
+  [{
+    "country": "Brazil",
+    "city": "Brasília",
+    "independence": "1822",
+    "location": "South America"
+  }]
+*/
+brazil.toJson()
+
+// get capital
+brazil.capital // Brasília
+
+// resetting the filter
+countries.reset()
+
+// filter by location and independence year
+countries.byLocation('europe').byIndependence(1900, '>=')
+
+/**
+ * Get all countries data:
+  [{
+    "country": "Bulgaria",
+    "city": "Sofia",
+    "independence": "1908",
+    "location": "Eastern Europe"
+  },
+  {...},
+  {...}
+  ]
+*/
+countries.toJson()
+
+// When country has more than one country after applying the filter it returns a random capital every time it calls .capital
+countries.capital // Sofia
+countries.capital // ...
+countries.capital // ...
+countries.capital // ...
+```
+
+## Full API Reference
+
+```js
+const Countries = require('countries-capital')
+const countries = new Countries()
+
+// lists all the countries data disregading any filter
+countries.list()
+
+// reset any applied filters
+countries.reset()
+
+// filter by country name
+// passing country full name: single result
+countries.byName('brazil')
+countries.toJson() // all country data as an array of objects
+countries.capital // only country capital as string
+
+// passing country partial name: multiple results
+countries.reset().byName('ind')
+
+// filter by capital
+countries.byCapital('amsterdam') // single result
+countries.byCapital('ber') // multiple result
+countries.byCapital(null) // multiple result. All countries without a Capital City
+
+// filter by location
+countries.byLocation('europe')
+countries.byLocation('South America')
+countries.byLocation(null)
+
+// filter by independence date
+countries.byIndependence(1822) // implicit = (equal sign) operator
+countries.byIndependence(500, '<') // lesser than
+countries.byIndependence(2000, '>=') // greater or equal than
+countries.byIndependence(null) // countries without independence year
+
+// return all filtered data as array of objects
+countries.toJson()
+
+// return capital as string
+// if countries.length === 0, throw an error
+// if countries.length === 1, return specific capital
+// if countries.length > 1, return random capital
+countries.capital
+```
 
 ## Running the tests
 
