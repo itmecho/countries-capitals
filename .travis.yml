@@ -7,9 +7,6 @@ branches:
 node_js:
   - 8
 
-install:
-  - npm install -g codecov
-
 jobs:
   include:
     - stage: release
@@ -20,4 +17,4 @@ jobs:
         script:
           - npx semantic-release
 
-after_success: npm run test && codecov
+after_success: npm run test && ./node_modules/.bin/codecov
