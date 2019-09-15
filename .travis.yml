@@ -20,6 +20,4 @@ jobs:
         script:
           - npx semantic-release
 
-after_success:
-  - jest
-  - codecov
+after_success: npm run test && codecov
