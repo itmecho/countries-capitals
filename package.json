@@ -2,13 +2,21 @@
   "name": "countries-capitals",
   "version": "0.0.0-development",
   "description": "A simple package to get the capital of the countries",
-  "main": "index.js",
+  "main": "dist/index.js",
+  "files": [
+    "dist",
+    "README.md"
+  ],
   "scripts": {
     "test": "jest --coverage",
     "test:watch": "jest --watch",
-    "lint": "standard | snazzy",
-    "lint:fix": "standard --fix",
-    "semantic-release": "semantic-release"
+    "lint": "standard src | snazzy",
+    "lint:fix": "standard src --fix",
+    "semantic-release": "semantic-release",
+    "prebuild": "rimraf dist",
+    "build": "rollup -c",
+    "postbuild": "uglifyjs dist/index.umd.js --output dist/index.umd.min.js --compress --mangle",
+    "prepublishOnly": "npm run build"
   },
   "repository": {
     "type": "git",
@@ -28,14 +36,22 @@
     "random-item": "3.0.0"
   },
   "devDependencies": {
+    "@babel/core": "7.6.0",
+    "@babel/preset-env": "7.6.0",
     "codecov": "3.5.0",
     "cz-conventional-changelog": "3.0.2",
     "husky": "3.0.5",
     "jest": "24.9.0",
     "jest-extended": "0.11.2",
+    "rimraf": "3.0.0",
+    "rollup": "1.21.3",
+    "rollup-plugin-commonjs": "10.1.0",
+    "rollup-plugin-json": "4.0.0",
+    "rollup-plugin-node-resolve": "5.2.0",
     "semantic-release": "^15.13.24",
     "snazzy": "8.0.0",
-    "standard": "14.2.0"
+    "standard": "14.2.0",
+    "uglify-es": "3.3.9"
   },
   "jest": {
     "testEnvironment": "node",

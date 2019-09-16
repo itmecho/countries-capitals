@@ -1,7 +1,7 @@
 /* eslint-env jest */
 
-const Countries = require('./index')
-const countriesArray = require('./countries')
+import Countries from './index'
+import countriesArray from './countries'
 
 const countries = new Countries()
 const countriesObjectKeys = ['country', 'city', 'location', 'independence']
@@ -15,8 +15,8 @@ describe('Countries', () => {
     })
   })
 
-  describe(' countries json file', () => {
-    test('should match with the snapshot', () => {
+  describe('countries json file', () => {
+    test('should match the snapshot', () => {
       expect(countriesArray).toMatchSnapshot()
     })
   })
