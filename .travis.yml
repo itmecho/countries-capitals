@@ -12,7 +12,7 @@ jobs:
   include:
     - stage: release
       node_js: lts/*
-      script: codecov
+      script: npm t && codecov
       deploy:
         provider: script
         skip_cleanup: true
