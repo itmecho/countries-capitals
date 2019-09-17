@@ -1,9 +1,9 @@
 'use strict'
 
-const countriesArray = require('./countries')
-const randomItem = require('random-item')
+import countriesArray from './countries.json'
+import randomItem from 'random-item'
 
-class Countries {
+export default class Countries {
   constructor (countries = countriesArray) {
     this.countries = countries
     this.original = countries
@@ -143,5 +143,3 @@ class Countries {
     return randomItem(this.countries).city
   }
 }
-
-module.exports = Countries
