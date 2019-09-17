@@ -15,8 +15,7 @@
     "semantic-release": "semantic-release",
     "prebuild": "rimraf dist",
     "build": "rollup --config",
-    "postbuild": "uglifyjs dist/index.umd.js --output dist/index.umd.min.js --compress --mangle",
-    "prepublishOnly": "npm run build"
+    "postbuild": "uglifyjs dist/index.umd.js --output dist/index.umd.min.js --compress --mangle"
   },
   "repository": {
     "type": "git",

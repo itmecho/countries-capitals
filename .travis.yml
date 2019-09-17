@@ -18,4 +18,6 @@ jobs:
         script:
           - npx semantic-release
 
-after_success: npm run test && ./node_modules/.bin/codecov
+after_success:
+  - npm run build
+  - ./node_modules/.bin/codecov
