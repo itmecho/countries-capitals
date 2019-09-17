@@ -15,7 +15,7 @@
     "semantic-release": "semantic-release",
     "prebuild": "rimraf dist",
     "build": "rollup --config",
-    "postbuild": "uglifyjs dist/index.umd.js --output dist/index.umd.min.js --compress --mangle",
+    "postbuild": "terser dist/index.umd.js --output dist/index.umd.min.js --compress --mangle --source-map \"filename='index.umd.min.js.map'\"",
     "prepublishOnly": "npm run build"
   },
   "repository": {
@@ -53,7 +53,7 @@
     "semantic-release": "^15.13.24",
     "snazzy": "8.0.0",
     "standard": "14.2.0",
-    "uglify-es": "3.3.9"
+    "terser": "4.3.1"
   },
   "jest": {
     "testEnvironment": "node",
