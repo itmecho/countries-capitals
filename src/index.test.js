@@ -1,7 +1,7 @@
 /* eslint-env jest */
 
-const Countries = require('./index')
-const countriesArray = require('./countries')
+import Countries from './index'
+import countriesArray from './countries'
 
 const countries = new Countries()
 const countriesObjectKeys = ['country', 'city', 'location', 'independence']
