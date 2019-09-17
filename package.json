@@ -61,7 +61,7 @@
       "jest-extended"
     ],
     "collectCoverageFrom": [
-      "index.js"
+      "src/index.js"
     ],
     "coverageThreshold": {
       "global": {
