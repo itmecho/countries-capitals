@@ -3,6 +3,7 @@
   "version": "0.0.0-development",
   "description": "A simple package to get the capital of the countries",
   "main": "dist/index.js",
+  "types": "dist/index.d.ts",
   "files": [
     "dist",
     "README.md"
@@ -10,13 +11,15 @@
   "scripts": {
     "test": "jest --coverage",
     "test:watch": "jest --watch",
-    "lint": "standard src | snazzy",
-    "lint:fix": "standard src --fix",
+    "lint": "standard src/*.ts | snazzy",
+    "lint:fix": "standard src/*.ts --fix",
     "semantic-release": "semantic-release",
     "prebuild": "rimraf dist",
-    "build": "rollup --config",
+    "build": "tsc && rollup --config",
     "postbuild": "terser dist/index.umd.js --output dist/index.umd.min.js --compress --mangle --source-map \"filename='index.umd.min.js.map'\"",
-    "prepublishOnly": "npm run build"
+    "prepublishOnly": "npm run build",
+    "docs": "typedoc --out docs src",
+    "gh-pages": "rimraf docs && npm run docs && gh-pages -d docs"
   },
   "repository": {
     "type": "git",
@@ -36,12 +39,12 @@
     "random-item": "3.0.0"
   },
   "devDependencies": {
-    "@babel/cli": "7.6.0",
-    "@babel/core": "7.6.0",
-    "@babel/node": "7.6.1",
-    "@babel/preset-env": "7.6.0",
+    "@types/jest": "24.0.18",
+    "@typescript-eslint/eslint-plugin": "2.3.0",
+    "@typescript-eslint/parser": "2.3.0",
     "codecov": "3.5.0",
     "cz-conventional-changelog": "3.0.2",
+    "gh-pages": "2.1.1",
     "husky": "3.0.5",
     "jest": "24.9.0",
     "jest-extended": "0.11.2",
@@ -53,24 +56,10 @@
     "semantic-release": "^15.13.24",
     "snazzy": "8.0.0",
     "standard": "14.2.0",
-    "terser": "4.3.1"
-  },
-  "jest": {
-    "testEnvironment": "node",
-    "setupFilesAfterEnv": [
-      "jest-extended"
-    ],
-    "collectCoverageFrom": [
-      "src/index.js"
-    ],
-    "coverageThreshold": {
-      "global": {
-        "branches": 100,
-        "functions": 100,
-        "lines": 100,
-        "statements": 100
-      }
-    }
+    "terser": "4.3.1",
+    "ts-jest": "24.1.0",
+    "typedoc": "0.15.0",
+    "typescript": "3.6.3"
   },
   "husky": {
     "hooks": {
@@ -81,5 +70,11 @@
     "commitizen": {
       "path": "./node_modules/cz-conventional-changelog"
     }
+  },
+  "standard": {
+    "parser": "@typescript-eslint/parser",
+    "plugins": [
+      "@typescript-eslint/eslint-plugin"
+    ]
   }
 }

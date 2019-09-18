@@ -13,6 +13,7 @@ jobs:
     - stage: release
       node_js: lts/*
       script: npm t && codecov
+      script: npm run gh-pages
       deploy:
         provider: script
         skip_cleanup: true

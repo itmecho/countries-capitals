@@ -1,7 +1,8 @@
 /* eslint-env jest */
 
+import 'jest-extended'
 import Countries from './index'
-import countriesArray from './countries'
+import countriesArray from './countries.json'
 
 const countries = new Countries()
 const countriesObjectKeys = ['country', 'city', 'location', 'independence']
@@ -15,8 +16,8 @@ describe('Countries', () => {
     })
   })
 
-  describe(' countries json file', () => {
-    test('should match with the snapshot', () => {
+  describe('countries json file', () => {
+    test('should match the snapshot', () => {
       expect(countriesArray).toMatchSnapshot()
     })
   })
@@ -80,16 +81,6 @@ describe('Countries', () => {
       expect(country.toJson()).toStrictEqual(countries.list())
       expect(countries.list().map(({ city }) => city)).toContain(country.capital)
     })
-
-    test('should not filter the countries list if null param is given', () => {
-      const country = countries.byName(null)
-      expect(countries.list().map(({ city }) => city)).toContain(country.capital)
-    })
-
-    test('should not filter the countries list if an invalid param is given', () => {
-      const country = countries.byName({})
-      expect(countries.list().map(({ city }) => city)).toContain(country.capital)
-    })
   })
 
   describe('byCapital', () => {
@@ -104,12 +95,6 @@ describe('Countries', () => {
 
     test('should not filter the countries list if null param is given', () => {
       const country = countries.byCapital(null)
-      expect(country.toJson().length).toBeGreaterThan(0)
-      expect(countries.list().map(({ city }) => city)).toContain(country.capital)
-    })
-
-    test('should not filter the countries list if an invalid param is given', () => {
-      const country = countries.byCapital({})
       expect(country.toJson().length).toBeGreaterThan(0)
       expect(countries.list().map(({ city }) => city)).toContain(country.capital)
     })
@@ -129,12 +114,6 @@ describe('Countries', () => {
       expect(noLocation.length).toBeGreaterThan(0)
       noLocation.forEach(({ location }) => expect(location).toBe(null))
     })
-
-    test('should not filter the countries list if an invalid param is given', () => {
-      const country = countries.byLocation({}).byCapital('ams')
-      expect(country.toJson().length).toBeGreaterThan(0)
-      expect(countries.list().map(({ city }) => city)).toContain(country.capital)
-    })
   })
 
   describe('locations', () => {
@@ -149,10 +128,10 @@ describe('Countries', () => {
 
   describe('byIndependence', () => {
     test('should filter the countries list by independece year (1822) and return an array of countries', () => {
-      const spy = jest.spyOn(countries, 'compare')
+      const spy = jest.spyOn(Countries.prototype as any, 'compare')
       const _1822 = countries.byIndependence(1822)
 
-      expect(spy).toHaveBeenCalledWith('1822', '=', 1822)
+      expect(spy).toHaveBeenCalledWith(1822, '=', 1822)
       expect(_1822.toJson()[0]).toBeObject()
       expect(_1822.toJson()[0]).toContainAllKeys(countriesObjectKeys)
       expect(_1822.toJson().map(({ city }) => city)).toIncludeAllMembers(['Brasília', 'Quito'])
@@ -161,24 +140,24 @@ describe('Countries', () => {
     })
 
     test('should filter the countries list by independece year >= (1900) and return an array of countries', () => {
-      const spy = jest.spyOn(countries, 'compare')
+      const spy = jest.spyOn(Countries.prototype as any, 'compare')
       const youngers = countries.byIndependence(1900, '>=').toJson()
 
-      youngers.forEach(({ independence }) => expect(spy).toHaveBeenCalledWith(independence, '>=', 1900))
+      youngers.forEach(({ independence }) => expect(spy).toHaveBeenCalledWith(parseInt(independence as string, 10), '>=', 1900))
       expect(youngers.map(({ country }) => country)).toIncludeAllMembers(['Angola', 'Bulgaria'])
 
       spy.mockRestore()
     })
 
     test('should filter the countries list by independece year <= (1000) and return an array of countries', () => {
-      const spy = jest.spyOn(countries, 'compare')
+      const spy = jest.spyOn(Countries.prototype as any, 'compare')
 
       let elders = countries.byIndependence(1000, '<=').toJson()
-      elders.forEach(({ independence }) => expect(spy).toHaveBeenCalledWith(independence, '<=', 1000))
+      elders.forEach(({ independence }) => expect(spy).toHaveBeenCalledWith(parseInt(independence as string, 10), '<=', 1000))
       expect(elders.map(({ country }) => country)).toIncludeAllMembers(['China', 'Japan', 'France'])
 
       elders = countries.byIndependence(500, '<').toJson()
-      elders.forEach(({ independence }) => expect(spy).toHaveBeenCalledWith(independence, '<=', 1000))
+      elders.forEach(({ independence }) => expect(spy).toHaveBeenCalledWith(parseInt(independence as string, 10), '<', 500))
       expect(elders.map(({ country }) => country)).toIncludeAllMembers(['China', 'Japan', 'Ethiopia'])
 
       spy.mockRestore()
@@ -188,12 +167,6 @@ describe('Countries', () => {
       const noIndependence = countries.byIndependence(null).toJson()
       expect(noIndependence.length).toBeGreaterThan(0)
       noIndependence.forEach(({ independence }) => expect(independence).toBe(null))
-    })
-
-    test('should not filter the countries list if an invalid param is given', () => {
-      const country = countries.byIndependence({}).byCapital('ams')
-      expect(country.toJson().length).toBeGreaterThan(0)
-      expect(countries.list().map(({ city }) => city)).toContain(country.capital)
     })
   })
 
