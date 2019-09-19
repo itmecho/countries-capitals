@@ -18,8 +18,8 @@
     "build": "tsc && rollup --config",
     "postbuild": "terser dist/index.umd.js --output dist/index.umd.min.js --compress --mangle --source-map \"filename='index.umd.min.js.map'\"",
     "prepublishOnly": "npm run build",
-    "docs": "typedoc --out docs src",
-    "gh-pages": "rimraf docs && npm run docs && gh-pages -d docs"
+    "predocs": "rimraf docs",
+    "docs": "typedoc --out docs src"
   },
   "repository": {
     "type": "git",
@@ -44,7 +44,6 @@
     "@typescript-eslint/parser": "2.3.0",
     "codecov": "3.5.0",
     "cz-conventional-changelog": "3.0.2",
-    "gh-pages": "2.1.1",
     "husky": "3.0.5",
     "jest": "24.9.0",
     "jest-extended": "0.11.2",
