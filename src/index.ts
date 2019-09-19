@@ -3,43 +3,45 @@
 import countriesArray from './countries.json'
 import randomItem from 'random-item'
 
+export interface CountryItem {
+  country: string;
+  city: string | null;
+  independence: string | null;
+  location: string | null;
+}
+
+export interface CountryItems extends Array<CountryItem>{}
+
+export type FilterInput = string | null
+
 export default class Countries {
-  constructor (countries = countriesArray) {
+  private countries: CountryItems;
+  private original: CountryItems;
+
+  constructor (countries: CountryItems = countriesArray) {
     this.countries = countries
     this.original = countries
   }
 
-  list () {
+  public list (): CountryItems {
     return this.original
   }
 
-  reset () {
+  public reset (): this {
     this.countries = this.original
     return this
   }
 
-  isValidInput (input) {
-    return typeof input === 'string' || input === null
-  }
-
-  containString (str1, str2) {
+  private containString (str1: string, str2: string): boolean {
     return str1.toLowerCase().includes(str2.toLowerCase())
   }
 
-  byName (name) {
-    if (typeof name !== 'string') {
-      return this
-    }
-
+  public byName (name: string): this {
     this.countries = this.countries.filter(({ country }) => this.containString(country, name))
     return this
   }
 
-  byCapital (capital) {
-    if (!this.isValidInput(capital)) {
-      return this
-    }
-
+  public byCapital (capital: FilterInput): this {
     this.countries = this.countries.filter(({ city }) => {
       if (capital === null) {
         return city === null
@@ -55,11 +57,7 @@ export default class Countries {
     return this
   }
 
-  byLocation (region) {
-    if (!this.isValidInput(region)) {
-      return this
-    }
-
+  public byLocation (region: FilterInput): this {
     this.countries = this.countries.filter(({ location }) => {
       if (region === null) {
         return location === null
@@ -75,21 +73,14 @@ export default class Countries {
     return this
   }
 
-  locations () {
-    return [...new Set(this.original.map(item => item.location).filter(Boolean))].sort()
+  public locations (): string[] {
+    const locations = this.original.map(item => item.location).filter(Boolean) as string[]
+    return [...new Set(locations)].sort()
   }
 
-  byIndependence (year, operator) {
-    if (!(typeof year === 'number' || year === null)) {
-      return this
-    }
-
+  public byIndependence (year: number | null, operator: string = '='): this {
     const validOperators = ['=', '>', '>=', '<', '<=']
-    let op = '='
-
-    if (validOperators.includes(operator)) {
-      op = operator
-    }
+    const op = validOperators.includes(operator) ? operator : '='
 
     this.countries = this.countries.filter(({ independence }) => {
       if (year === null) {
@@ -100,22 +91,24 @@ export default class Countries {
         return false
       }
 
-      return this.compare(independence, op, year)
+      return this.compare(parseInt(independence, 10), op, year)
     })
 
     return this
   }
 
-  longest () {
-    const capitalsArray = this.original.map(({ city }) => city).filter(Boolean)
-    const capital = capitalsArray.reduce((a, b) => a.length > b.length ? a : b)
+  public longest (): this {
+    const capitalsArray = this.original.map(({ city }) => city).filter(Boolean) as string[]
+    const capital:string = capitalsArray.reduce((acc, cur) => {
+      return acc.length > cur.length ? acc : cur
+    })
 
     this.reset().byCapital(capital)
 
     return this
   }
 
-  compare (firstValue, operator, secondValue) {
+  private compare (firstValue: number, operator: string, secondValue: number): boolean {
     switch (operator) {
       case '>': return firstValue > secondValue
       case '>=': return firstValue >= secondValue
@@ -125,11 +118,11 @@ export default class Countries {
     }
   }
 
-  toJson () {
+  public toJson (): CountryItems {
     return this.countries
   }
 
-  get capital () {
+  public get capital (): string | null {
     const countriesFound = this.countries.length
 
     if (!countriesFound) {
