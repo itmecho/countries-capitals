@@ -6,6 +6,7 @@
 ![npm](https://img.shields.io/npm/v/countries-capitals?style=flat-square)
 ![npm](https://img.shields.io/npm/dw/countries-capitals?style=flat-square)
 ![NPM](https://img.shields.io/npm/l/countries-capitals?style=flat-square)
+[![Language grade: JavaScript](https://img.shields.io/lgtm/grade/javascript/g/chgasparoto/countries-capitals.svg?logo=lgtm&logoWidth=18)](https://lgtm.com/projects/g/chgasparoto/countries-capitals/context:javascript)
 [![semantic-release](https://img.shields.io/badge/%20%20%F0%9F%93%A6%F0%9F%9A%80-semantic--release-e10079.svg)](https://github.com/semantic-release/semantic-release?style=flat-square)
 [![Commitizen friendly](https://img.shields.io/badge/commitizen-friendly-brightgreen.svg)](http://commitizen.github.io/cz-cli?style=flat-square)
 ![udemy](https://img.shields.io/badge/udemy--course-countries--capitals-red?style=flat-square)
